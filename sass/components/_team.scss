@@ -1,0 +1,52 @@
+.team {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+}
+
+.team__item {
+    box-shadow: $shadow-card-team;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $bg-color;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 2 * 30px) / 2;
+        margin: 15px;
+    }
+}
+
+.team__img {
+    @media screen and (max-width: 767px) {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.team__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.team__title {
+    margin-bottom: 10px;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team__text {
+    margin-bottom: 16px;
+    color: $second-text;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}

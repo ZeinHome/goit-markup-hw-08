@@ -1,0 +1,38 @@
+.join {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
+
+.join__title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-title-button;
+}
+
+.social-network__link--join-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $color-title-button;
+    background-color: $shadow-join;
+    transition: background-color 250ms $transition-timing-function;
+    &:hover,
+    &:focus {
+        background-color: $accent-text;
+    }
+}

@@ -1,0 +1,117 @@
+.form {
+    padding: 40px;
+}
+
+.form__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+}
+
+.form__text {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $second-text;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.form__fied {
+    position: relative;
+    transition: fill 250ms $transition-timing-function, border 250ms $transition-timing-function;
+    &:focus-within .form__icon {
+        fill: $accent-text;
+    }
+    &:focus-within .form__input {
+        border: 1px solid $accent-text;
+    }
+}
+
+.form__input {
+    display: block;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.form__textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    min-height: 120px;
+    padding-left: 15px;
+    padding-top: 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+//  checkbox
+.form__contract {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.form__checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    &:checked+.form__checkbox--icon {
+        border-color: $primary-button;
+        background-color: $primary-button;
+        background-image: url(../images/iconcheck.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
+
+.form__checkbox--icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.form__link {
+    color: $accent-text;
+}
+
+.form__button {
+    @extend %button-primary;
+    width: 200px;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px $button-shadow;
+    }
+}

@@ -1,0 +1,73 @@
+//  контейнер 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    &__header {
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    &--footer {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.container--menu {
+    padding: 48px 30px;
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.container--footer-tablet {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+//  section 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &--teames {
+        @media screen and (max-width: 480px) {
+            width: 480px;
+        }
+        background-color: $bg-section-team;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+}
+
+.section--no-padding {
+    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}

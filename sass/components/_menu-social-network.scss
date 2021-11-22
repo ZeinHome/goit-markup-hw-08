@@ -1,0 +1,27 @@
+.menu-social-network {
+    display: flex;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-social-network__item {
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.menu-social-network__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-text;
+}
+
+.menu-social-network__item:not(:last-child)::after {
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+}

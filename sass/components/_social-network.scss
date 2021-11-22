@@ -1,0 +1,23 @@
+.social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-network__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.social-network__link {
+    @extend .social-network;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $color-company;
+    transition: fill 250ms $transition-timing-function, background-color 250ms $transition-timing-function;
+    &:hover,
+    &:focus {
+        background-color: $accent-text;
+        fill: $bg-color;
+    }
+}

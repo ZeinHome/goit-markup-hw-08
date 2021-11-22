@@ -1,0 +1,76 @@
+.hero {
+    max-width: 1600px;
+    min-width: 480px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $bg-hero;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 480px) {
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-mobile.jpg');
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-tablet.jpg');
+    }
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero.jpg');
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-mobile@2x.jpg');
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-tablet@2x.jpg');
+        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero@2x.jpg');
+    }
+}
+
+.hero__title {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: $color-hero;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+%button {
+    cursor: pointer;
+    border: transparent;
+}
+
+%button-primary {
+    cursor: pointer;
+    border: transparent;
+    padding: 10px 32px;
+    color: $color-title-button;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background: $primary-button;
+    box-shadow: $button-shadow;
+    border-radius: 4px;
+    transition: box-shadow 250ms $transition-timing-function;
+}
+
+.hero__button {
+    @extend %button-primary;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px $button-shadow;
+    }
+}

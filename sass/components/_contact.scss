@@ -1,0 +1,79 @@
+.contact-nav {
+    @media screen and (max-width: 767px) {
+        margin-top: 302px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 84px;
+        white-space: nowrap;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.contact {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 21px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.contact__item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &:not(:first-child) {
+            margin-left: 50px;
+        }
+    }
+}
+
+.contact__link {
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $second-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms $transition-timing-function;
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.17;
+        padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    .contact &:hover,
+    .contact &:focus {
+        color: $accent-text;
+        fill: currentColor;
+    }
+}
