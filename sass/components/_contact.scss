@@ -3,8 +3,9 @@
         margin-top: 302px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 84px;
-        white-space: nowrap;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -18,9 +19,7 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 64px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin: 21px 0;
-    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {}
     @media screen and (min-width: 1200px) {
         display: flex;
     }
@@ -53,9 +52,8 @@
 }
 
 .contact__link {
+    display: block;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: $second-text;
     font-weight: 500;
     font-size: 14px;

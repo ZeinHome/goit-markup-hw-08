@@ -60,6 +60,7 @@
 /* overflow */
 
 .gallery__thumb {
+    display: block;
     position: relative;
     overflow: hidden;
 }
@@ -112,7 +113,6 @@
 }
 
 .gallery-container__title {
-    white-space: nowrap;
     color: $primary-text-color;
     font-weight: 700;
     font-size: 18px;

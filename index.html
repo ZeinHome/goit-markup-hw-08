@@ -29,7 +29,7 @@
                 </a>
 
                 <button type="button" class="menu-button" aria-expanded="true" aria-controls="menu-conteiner" data-menu-button>
-                    <svg class="menu-button__icon" width="40px" height="40px">
+                    <svg class="menu-button__icon" width="24px" height="16px">
                         <use class="menu__icon--menu" href="./images/sprite.svg#icon-menu"></use>
                     </svg>
                   </button>
@@ -89,8 +89,8 @@
 
     <main>
         <section class="hero">
-            <div class="conteiner">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <div class="container">
+                <h1 class="hero__title">Эффективные решения<br /> для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="hero__button">Заказать услугу</button>
                 <!-- modal window -->
                 <div class="backdrop backdrop--is-hidden" data-modal>
@@ -194,13 +194,13 @@
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="photo-card">
-                    <li class="photo-card__item"> <img src="./images/work.jpg" width="370" alt="пишет код">
+                    <li class="photo-card__item"> <img srcset="./images/work.jpg 1x, ./images/work@2x.jpg 2x" src="./images/work.jpg" width="370" alt="пишет код">
                         <h3 class="photo-card__title">Десктопные приложения</h3>
                     </li>
-                    <li class="photo-card__item"> <img src="./images/work2.jpg" width="370" alt="работа в телефоне">
+                    <li class="photo-card__item"> <img srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x" src="./images/work1.jpg" width="370" alt="работа в телефоне">
                         <h3 class="photo-card__title">Мобильные приложения</h3>
                     </li>
-                    <li class="photo-card__item"> <img src="./images/work1.jpg" width="370" alt="RGB планшет">
+                    <li class="photo-card__item"> <img srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x" src="./images/work2.jpg" width="370" alt="RGB планшет">
                         <h3 class="photo-card__title">Дизайнерские решения</h3>
                     </li>
                 </ul>

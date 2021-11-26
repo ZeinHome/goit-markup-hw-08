@@ -2,9 +2,10 @@
         background: $bg-hero;
         padding-bottom: 60px;
         padding-top: 60px;
-        @media screen and (max-width: 480px) {
-            width: 480px;
-        }
+    }
+    
+    .container--footer-tablet {
+        margin-bottom: 60px;
     }
     
     .footer__information {
@@ -67,7 +68,6 @@
     }
     
     .follow__input {
-        min-width: 358px;
         min-height: 50px;
         padding-left: 15px;
         border: 1px solid $border-footer-input;

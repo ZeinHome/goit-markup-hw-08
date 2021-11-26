@@ -1,24 +1,22 @@
 .hero {
-    max-width: 1600px;
-    min-width: 480px;
-    height: 600px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $bg-hero;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media screen and (max-width: 480px) {
-        background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-mobile.jpg');
-    }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-mobile.jpg');
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
         background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-tablet.jpg');
+        max-width: 768px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero.jpg');
+        max-width: 1200px;
     }
 }
 
@@ -34,16 +32,15 @@
 }
 
 .hero__title {
-    max-width: 696px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 30px;
     color: $color-hero;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+        line-height: 1.61;
+    }
 }
 
 %button {
