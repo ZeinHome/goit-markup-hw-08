@@ -268,10 +268,8 @@ body.modal-open {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav__link--current {
-    color: #2196F3;
-  }
+.site-nav__link--current {
+  color: #2196F3;
 }
 
 .site-nav__link--current::after {

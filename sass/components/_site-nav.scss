@@ -46,9 +46,7 @@
     }
     
     .site-nav__link--current {
-        @media screen and (min-width: 768px) {
-            color: $accent-text;
-        }
+        color: $accent-text;
     }
     
     .site-nav__link--current::after {
