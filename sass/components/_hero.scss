@@ -3,8 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding: 118px 0;
     background-color: $bg-hero;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +36,7 @@
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         font-size: 26px;
         line-height: 1.61;
     }
