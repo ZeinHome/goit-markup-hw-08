@@ -950,7 +950,6 @@ input:invalid {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__information {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
