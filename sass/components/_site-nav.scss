@@ -1,8 +1,10 @@
+    .navigation {
+        margin-left: auto;
+    }
+    
     .site-nav {
-        //   margin-left: 93px;
         @media screen and (min-width: 768px) {
             display: flex;
-            margin-left: 88px;
         }
     }
     

@@ -1,21 +1,34 @@
 .portfolio-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: -8px;
     @media screen and (min-width: 768px) {
         justify-content: center;
     }
 }
 
 .portfolio-menu__item {
-    margin: 8px;
+    @media screen and (max-width: 767px) {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        &:nth-child(2n+3) {
+            margin-right: 0px;
+        }
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
 }
 
 .portfolio-menu__button {
     @extend %button;
     display: flex;
     justify-content: center;
-    min-width: 73px;
     padding: 6px 22px;
     background-color: $color-button;
     border-radius: 4px;

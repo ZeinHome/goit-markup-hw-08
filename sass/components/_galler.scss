@@ -1,6 +1,6 @@
 .gallery {
     @media screen and (max-width: 767px) {
-        margin-top: 45px;
+        margin-top: 40px;
     }
     @media screen and (min-width: 767px) and (max-width: 1199px) {
         display: flex;
@@ -118,6 +118,9 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    @media screen and (min-width: 768px) {
+        white-space: nowrap;
+    }
 }
 
 .gallery-container__categories {

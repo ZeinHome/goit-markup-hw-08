@@ -5,7 +5,10 @@
     }
     
     .container--footer-tablet {
-        margin-bottom: 60px;
+        @media screen and (max-width: 1199px) {
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
     }
     
     .footer__information {

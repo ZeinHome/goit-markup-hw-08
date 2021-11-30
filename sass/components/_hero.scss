@@ -1,5 +1,4 @@
 .hero {
-    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -11,11 +10,10 @@
     background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-mobile.jpg');
     @media screen and (min-width: 767px) and (max-width: 1199px) {
         background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero-tablet.jpg');
-        max-width: 768px;
     }
     @media screen and (min-width: 1200px) {
         background-image: linear-gradient(to right, $gradien-color, $gradien-color), url('../images/hero.jpg');
-        max-width: 1200px;
+        padding: 200px 0;
     }
 }
 
@@ -39,6 +37,14 @@
     @media screen and (max-width: 767px) {
         font-size: 26px;
         line-height: 1.61;
+    }
+    @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.61;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
     }
 }
 
