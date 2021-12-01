@@ -203,7 +203,9 @@ body.modal-open {
     overflow: scroll;
   }
   .menu-container.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -234,8 +236,10 @@ body.modal-open {
   padding: 10px;
 }
 
-.navigation {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -305,12 +309,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .site-nav__link--current::after {
     display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .contact-nav {
-    margin-top: 302px;
   }
 }
 
