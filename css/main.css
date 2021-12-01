@@ -200,6 +200,7 @@ body.modal-open {
     width: 100%;
     height: 100vh;
     z-index: 2;
+    overflow: scroll;
   }
   .menu-container.is-open {
     display: block;
