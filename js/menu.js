@@ -11,6 +11,6 @@
     function toggleModal() {
 
         refs1.mobileMenuRef.classList.toggle('is-open');
-        document.body.classList.toggle("modal-open");
+
     }
 })();
