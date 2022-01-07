@@ -36,6 +36,7 @@
         text-decoration: none;
         transition: color 250ms $transition-timing-function;
         @media screen and (max-width: 767px) {
+            display: inline-block;
             font-weight: 500;
             font-size: 40px;
             line-height: 1.18;

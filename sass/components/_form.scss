@@ -66,17 +66,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 .form__checkbox {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -101,6 +107,9 @@
     margin-right: 7px;
     border: 2px solid black;
     border-radius: 4px;
+    @media screen and (max-width: 480px) {
+        width: 23px;
+    }
 }
 
 .form__link {

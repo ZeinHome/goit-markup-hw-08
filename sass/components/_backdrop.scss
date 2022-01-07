@@ -26,7 +26,7 @@ input:invalid {
 }
 
 .modal {
-    min-width: 450px;
+    max-width: 528px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,6 +37,12 @@ input:invalid {
     box-shadow: $shadow-modal;
     transform: translate(-50%, -50%) scale(1);
     transition: opacity 250ms $transition-timing-function, visibility 250ms $transition-timing-function, transform 250ms $transition-timing-function;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 450px;
+    }
+    @media screen and (max-width: 480px) {
+        width: 320px;
+    }
 }
 
 .modal__button-close {

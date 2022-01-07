@@ -26,7 +26,8 @@
         width: 100%;
         height: 100vh;
         z-index: 2;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: scroll;
         &.is-open {
             display: flex;
             flex-direction: column;
